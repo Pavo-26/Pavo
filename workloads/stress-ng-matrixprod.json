@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "argv": [
+    "/data/local/tmp/stress-ng",
+    "--cpu",
+    "16",
+    "--cpu-method",
+    "matrixprod",
+    "--oom-avoid",
+    "--metrics-brief",
+    "--times",
+    "--timeout",
+    "600s"
+  ]
+}

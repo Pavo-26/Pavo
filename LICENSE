@@ -1,0 +1,37 @@
+Repository licensing
+
+The MIT license below applies to independently authored Pavo code and
+documentation, except for the following materials:
+
+- scheduler/ and baselines/scx/source/ retain their component and file-level
+  licenses, including GPL-2.0-only and the bundled headers' own terms.
+- baselines/ztt/pixel6/ is excluded from this MIT grant. Its third-party
+  provenance and licensing are described in baselines/ztt/README.md;
+  the CleanRL portion retains baselines/ztt/LICENSE.CleanRL.
+- Kernel configuration snapshots, other third-party material and external
+  dependencies retain their respective terms.
+
+Existing copyright and license notices must be retained. This license does
+not grant additional rights to the excluded material.
+
+MIT License
+
+Copyright (c) 2026 Pavo contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

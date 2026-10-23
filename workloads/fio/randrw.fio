@@ -1,0 +1,20 @@
+# Random read/write: 4 jobs, depth 4, 70/30 read/write, 4-KB blocks.
+# Filename, runtime and log paths are supplied by run.sh.
+[global]
+size=2G
+time_based=1
+ramp_time=5
+rw=randrw
+rwmixread=70
+bs=4k
+ioengine=libaio
+iodepth=4
+numjobs=4
+direct=1
+invalidate=1
+randrepeat=1
+randseed=20250208
+group_reporting=1
+log_avg_msec=1000
+
+[io_heavy]

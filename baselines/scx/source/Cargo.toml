@@ -1,0 +1,12 @@
+# Focused workspace based on sched-ext/scx v1.0.9 with kernel compatibility changes.
+[workspace]
+members = [
+    "rust/scx_stats",
+    "rust/scx_stats/scx_stats_derive",
+    "rust/scx_utils",
+    "scheds/rust/scx_lavd",
+]
+resolver = "2"
+
+[profile.release]
+lto = true

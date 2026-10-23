@@ -1,0 +1,51 @@
+# Simple Perfetto configuration for adeb environment
+
+# Buffer configuration
+buffers: {
+  size_kb: 32768  # 32MB buffer
+  fill_policy: RING_BUFFER
+}
+
+# Duration - will be overridden by command line if specified
+duration_ms: 60000  # 60 seconds default
+
+# Data source configuration
+data_sources: {
+  config {
+    name: "linux.ftrace"
+    ftrace_config {
+      # Scheduler events
+      ftrace_events: "sched/sched_switch"
+      ftrace_events: "sched/sched_wakeup"
+      ftrace_events: "sched/sched_wakeup_new"
+      ftrace_events: "sched/sched_migrate_task"
+      
+      # CPU frequency events
+      ftrace_events: "power/cpu_frequency"
+      
+      # CPU idle events
+      ftrace_events: "power/cpu_idle"
+      
+      # Buffer size for ftrace
+      buffer_size_kb: 8192
+      
+      # Drain period
+      drain_period_ms: 250
+    }
+  }
+}
+
+# Process stats data source
+data_sources: {
+  config {
+    name: "linux.process_stats"
+    process_stats_config {
+      scan_all_processes_on_start: true
+      record_thread_names: true
+    }
+  }
+}
+
+# Output format
+write_into_file: true
+flush_period_ms: 5000

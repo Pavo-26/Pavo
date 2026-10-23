@@ -1,0 +1,255 @@
+{
+  "schema_version": 1,
+  "platform": "pixel6",
+  "package": "com.tencent.tmgp.sgame",
+  "version_name": "11.4.1.1",
+  "reference_size": [
+    2400,
+    1080
+  ],
+  "graphics_settings": "SET_FIXED_IN_GAME_GRAPHICS_SETTINGS",
+  "points": {
+    "start_game": [
+      1200,
+      845
+    ],
+    "dismiss_lobby_popup": [
+      2018,
+      150
+    ],
+    "dismiss_lobby_live_popup": [
+      1868,
+      104
+    ],
+    "dismiss_lobby_kpl_popup": [
+      2104,
+      116
+    ],
+    "battle": [
+      996,
+      815
+    ],
+    "improve_skills": [
+      1890,
+      60
+    ],
+    "basic_training": [
+      1500,
+      560
+    ],
+    "dismiss_training_tutorial": [
+      1200,
+      995
+    ],
+    "select_angela": [
+      390,
+      410
+    ],
+    "choose_opponent": [
+      2140,
+      1000
+    ],
+    "select_bian_que": [
+      190,
+      820
+    ],
+    "start_battle": [
+      2140,
+      1000
+    ],
+    "cancel_team_binding": [
+      1000,
+      960
+    ],
+    "self_invincible": [
+      433,
+      72
+    ],
+    "opponent_invincible": [
+      433,
+      200
+    ],
+    "no_skill_cooldown": [
+      351,
+      72
+    ],
+    "reset_level": [
+      229,
+      72
+    ],
+    "level_up_once": [
+      143,
+      72
+    ],
+    "learn_skill_1": [
+      1624,
+      832
+    ],
+    "learn_skill_2": [
+      1740,
+      636
+    ],
+    "skill_1": [
+      1745,
+      964
+    ],
+    "skill_2": [
+      1872,
+      735
+    ],
+    "settings": [
+      2242,
+      47
+    ],
+    "exit_match": [
+      1200,
+      957
+    ],
+    "continue_after_exit": [
+      1200,
+      980
+    ],
+    "move_start": [
+      472,
+      836
+    ],
+    "move_end": [
+      608,
+      698
+    ]
+  },
+  "regions": {
+    "lobby_battle_region": [
+      780,
+      730,
+      1210,
+      900
+    ],
+    "lobby_profile_region": [
+      80,
+      0,
+      700,
+      160
+    ],
+    "lobby_cards_region": [
+      1850,
+      100,
+      2320,
+      750
+    ],
+    "start_exit_region": [
+      2100,
+      0,
+      2300,
+      110
+    ],
+    "start_button_region": [
+      1000,
+      780,
+      1400,
+      880
+    ],
+    "start_rating_region": [
+      1990,
+      835,
+      2130,
+      1015
+    ],
+    "team_binding_panel_region": [
+      500,
+      100,
+      1900,
+      880
+    ],
+    "team_binding_cancel_region": [
+      820,
+      900,
+      1170,
+      1030
+    ],
+    "team_binding_confirm_region": [
+      1230,
+      900,
+      1580,
+      1030
+    ],
+    "lobby_popup_dim_region": [
+      0,
+      0,
+      600,
+      250
+    ],
+    "lobby_popup_x_region": [
+      1995,
+      123,
+      2050,
+      178
+    ],
+    "lobby_popup_x_core_region": [
+      2010,
+      142,
+      2026,
+      158
+    ],
+    "lobby_live_popup_x_region": [
+      1835,
+      75,
+      1900,
+      135
+    ],
+    "lobby_live_popup_x_core_region": [
+      1860,
+      96,
+      1876,
+      112
+    ],
+    "lobby_kpl_popup_x_region": [
+      2075,
+      80,
+      2140,
+      150
+    ],
+    "lobby_kpl_popup_x_core_region": [
+      2096,
+      108,
+      2112,
+      124
+    ],
+    "training_panel_region": [
+      100,
+      0,
+      1000,
+      400
+    ],
+    "training_score_region": [
+      1600,
+      0,
+      1950,
+      160
+    ],
+    "skill_1_plus_region": [
+      1585,
+      770,
+      1675,
+      865
+    ],
+    "skill_2_plus_region": [
+      1695,
+      575,
+      1795,
+      680
+    ],
+    "skill_1_icon_region": [
+      1670,
+      885,
+      1815,
+      1040
+    ],
+    "skill_2_icon_region": [
+      1790,
+      660,
+      1950,
+      825
+    ]
+  }
+}

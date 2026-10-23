@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "platform": "pixel6",
+  "perfdog": {
+    "version": "11.2.250408",
+    "executable": "SET_ACTUAL_PERFDOG_EXECUTABLE",
+    "data_root": "SET_ACTUAL_PERFDOG_ROOT",
+    "ui_config": "SET_PRIVATE_PERFDOG_UI_CONFIG_PATH"
+  },
+  "environment": {
+    "fingerprint": "",
+    "kernel_release": "",
+    "kernel_kind": "common-development",
+    "chroot": "/data/androdeb/debian",
+    "debian_version": "12.13",
+    "brightness_percent": 50,
+    "brightness_raw": null
+  },
+  "stress_ng": {
+    "path": "/data/local/tmp/stress-ng"
+  },
+  "binaries": {
+    "scx_pavo": {
+      "path": "/data/local/tmp/pavo-experiment/scx_pavo",
+      "arguments": []
+    },
+    "scx_simple": {
+      "path": "/opt/pavo-baselines/bin/scx_simple",
+      "upstream_version": "1.0.9",
+      "arguments": []
+    },
+    "scx_lavd": {
+      "path": "/opt/pavo-baselines/bin/scx_lavd",
+      "upstream_version": "1.0.9",
+      "arguments": []
+    },
+    "uclamp_floor_daemon": {
+      "path": "/data/local/tmp/uclamp_floor_daemon",
+      "arguments": []
+    }
+  },
+  "apps": {
+    "dy": {
+      "version_name": "",
+      "ui_config": "SET_PRIVATE_PIXEL_APPS_CONFIG_PATH"
+    },
+    "ks": {
+      "version_name": "",
+      "ui_config": "SET_PRIVATE_PIXEL_APPS_CONFIG_PATH"
+    },
+    "aqy": {
+      "version_name": "",
+      "ui_config": "SET_PRIVATE_PIXEL_APPS_CONFIG_PATH"
+    },
+    "tb": {
+      "version_name": "",
+      "ui_config": "SET_PRIVATE_PIXEL_APPS_CONFIG_PATH"
+    },
+    "wb": {
+      "version_name": "",
+      "ui_config": "SET_PRIVATE_PIXEL_APPS_CONFIG_PATH"
+    },
+    "honor_of_kings": {
+      "version_name": "11.4.1.1",
+      "ui_config": "SET_PRIVATE_PIXEL_GAME_CONFIG_PATH"
+    }
+  },
+  "ztt": {
+    "python": "",
+    "source_dir": "SET_ABSOLUTE_ARTIFACT_BASELINES_ZTT_PIXEL6_PATH",
+    "model_dir": "",
+    "model_stem": ""
+  }
+}

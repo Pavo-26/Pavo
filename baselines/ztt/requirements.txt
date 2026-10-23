@@ -1,0 +1,7 @@
+# Direct dependency constraints for the EarDVFS-based zTT adaptation.
+# Validate/freeze an isolated environment before device use.
+numpy>=1.21.6,<2
+torch>=2.0
+gymnasium>=0.28.1,<1.0
+stable-baselines3==2.0.0
+tyro>=0.5.10,<1

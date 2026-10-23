@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "platform": "oneplus15",
+  "perfdog": {
+    "version": "11.2.250408",
+    "executable": "SET_ACTUAL_PERFDOG_EXECUTABLE",
+    "data_root": "SET_ACTUAL_PERFDOG_ROOT",
+    "ui_config": "SET_PRIVATE_PERFDOG_UI_CONFIG_PATH"
+  },
+  "environment": {
+    "fingerprint": "",
+    "kernel_release": "6.12.23-4k-g1fdec1073c8f",
+    "kernel_kind": "control",
+    "chroot": "/data/androdeb/debian",
+    "debian_version": null,
+    "brightness_percent": 50,
+    "brightness_raw": null
+  },
+  "stress_ng": {
+    "path": "/data/local/tmp/stress-ng"
+  },
+  "binaries": {
+    "scx_pavo": {
+      "path": "/data/local/tmp/pavo-experiment/scx_pavo",
+      "arguments": []
+    }
+  },
+  "apps": {
+    "dy": {
+      "version_name": "",
+      "device_config": "SET_PRIVATE_DEVICE_CONFIG_PATH",
+      "apps_config": "SET_PRIVATE_APPS_CONFIG_PATH"
+    },
+    "ks": {
+      "version_name": "",
+      "device_config": "SET_PRIVATE_DEVICE_CONFIG_PATH",
+      "apps_config": "SET_PRIVATE_APPS_CONFIG_PATH"
+    },
+    "aqy": {
+      "version_name": "",
+      "device_config": "SET_PRIVATE_DEVICE_CONFIG_PATH",
+      "apps_config": "SET_PRIVATE_APPS_CONFIG_PATH"
+    },
+    "tb": {
+      "version_name": "",
+      "device_config": "SET_PRIVATE_DEVICE_CONFIG_PATH",
+      "apps_config": "SET_PRIVATE_APPS_CONFIG_PATH"
+    },
+    "wb": {
+      "version_name": "",
+      "device_config": "SET_PRIVATE_DEVICE_CONFIG_PATH",
+      "apps_config": "SET_PRIVATE_APPS_CONFIG_PATH"
+    }
+  }
+}

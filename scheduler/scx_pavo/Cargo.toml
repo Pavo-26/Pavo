@@ -1,0 +1,30 @@
+[package]
+name = "scx_pavo"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.88"
+description = "Pavo standalone sched_ext scheduler"
+license = "GPL-2.0-only"
+build = "build.rs"
+
+# Standalone workspace.
+[workspace]
+
+[features]
+default = ["scheduler"]
+scheduler = ["dep:libbpf-cargo", "dep:libbpf-rs", "dep:libbpf-sys", "dep:ctrlc"]
+# Only the kernel interface names change; policy constants never change.
+modern-kfuncs = []
+
+[target.'cfg(target_os = "linux")'.dependencies]
+libbpf-rs = { version = "=0.25.0-beta.1", optional = true }
+libbpf-sys = { version = "=1.4.6", optional = true }
+ctrlc = { version = "3.4", features = ["termination"], optional = true }
+
+[target.'cfg(target_os = "linux")'.build-dependencies]
+libbpf-cargo = { version = "=0.25.0-beta.1", optional = true }
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
+

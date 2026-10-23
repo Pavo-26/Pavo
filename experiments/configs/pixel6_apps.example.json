@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "note": "Configure App content and return navigation for the installed versions.",
+  "apps": {
+    "dy": {
+      "package": "com.ss.android.ugc.aweme",
+      "screen_size": [
+        1080,
+        2400
+      ],
+      "targets": {
+        "target_account": {
+          "text": "SET_TARGET_ACCOUNT"
+        },
+        "target_video": {
+          "description": "SET_TARGET_VIDEO_LABEL"
+        }
+      },
+      "return_steps": [
+        {
+          "key": "back",
+          "wait_s": 1
+        },
+        {
+          "key": "back",
+          "wait_s": 1
+        }
+      ]
+    },
+    "ks": {
+      "package": "com.smile.gifmaker",
+      "screen_size": [
+        1080,
+        2400
+      ],
+      "targets": {
+        "target_account": {
+          "text": "SET_TARGET_ACCOUNT"
+        },
+        "target_video": {
+          "description": "SET_TARGET_VIDEO_LABEL"
+        }
+      },
+      "return_steps": [
+        {
+          "key": "back",
+          "wait_s": 1
+        },
+        {
+          "key": "back",
+          "wait_s": 1
+        }
+      ]
+    },
+    "aqy": {
+      "package": "com.qiyi.video",
+      "screen_size": [
+        1080,
+        2400
+      ],
+      "playback": {
+        "fixed_video_title": "SET_OFFLINE_VIDEO_TITLE"
+      }
+    },
+    "tb": {
+      "package": "com.taobao.taobao",
+      "screen_size": [
+        1080,
+        2400
+      ],
+      "search_query": "SET_PRODUCT_SEARCH_QUERY",
+      "return_steps": [
+        {
+          "key": "back",
+          "wait_s": 1
+        },
+        {
+          "key": "back",
+          "wait_s": 1
+        }
+      ]
+    },
+    "wb": {
+      "package": "com.sina.weibo",
+      "screen_size": [
+        1080,
+        2400
+      ],
+      "targets": {
+        "search_history": {
+          "text": "SET_TARGET_ACCOUNT"
+        },
+        "target_profile": {
+          "text": "SET_TARGET_ACCOUNT"
+        }
+      },
+      "return_steps": [
+        {
+          "key": "back",
+          "wait_s": 1
+        }
+      ]
+    }
+  }
+}

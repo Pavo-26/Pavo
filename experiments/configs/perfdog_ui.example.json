@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "note": "PerfDog 11.2.250408 reference window and click positions. Select the target phone in PerfDog before running.",
+  "layout": {
+    "screen_size": [
+      3840,
+      2160
+    ],
+    "window_bounds": [
+      1069,
+      536,
+      1702,
+      1016
+    ],
+    "points": {
+      "SELECT_APP": [
+        1250,
+        840
+      ],
+      "SEARCH_BOX": [
+        1250,
+        900
+      ],
+      "APP_ROW": [
+        1250,
+        965
+      ],
+      "RECORD_BUTTON": [
+        2694,
+        663
+      ],
+      "SAVE_BUTTON": [
+        2046,
+        1048
+      ],
+      "EXPORT_NAME": [
+        1877,
+        985
+      ],
+      "EXPORT_CONFIRM": [
+        1850,
+        1187
+      ],
+      "CLOSE_TEST": [
+        1390,
+        630
+      ]
+    }
+  }
+}

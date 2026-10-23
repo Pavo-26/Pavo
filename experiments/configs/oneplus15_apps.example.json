@@ -1,0 +1,348 @@
+{
+  "schema_version": 1,
+  "note": "Configure App targets and coordinates for the installed versions.",
+  "apps": {
+    "dy": {
+      "name": "dy",
+      "package": "com.ss.android.ugc.aweme",
+      "flows": {
+        "profile_video": {
+          "selector_timeout_seconds": 10,
+          "home_navigation_selectors": [
+            {
+              "type": "resource_id",
+              "value": "SET_UNIQUE_IN_APP_ENTRY_MARKER"
+            }
+          ],
+          "me_tab": {
+            "selectors": [
+              {
+                "type": "text",
+                "value": "我"
+              },
+              {
+                "type": "description",
+                "value": "我，按钮"
+              }
+            ],
+            "fallback_normalized": [
+              0.9,
+              0.943
+            ]
+          },
+          "own_profile_marker": [
+            {
+              "type": "text",
+              "value": "SET_OWN_PROFILE_LABEL"
+            }
+          ],
+          "following_count": {
+            "selectors": [
+              {
+                "type": "resource_id",
+                "value": "com.ss.android.ugc.aweme:id/p+h"
+              },
+              {
+                "type": "text",
+                "value": "关注"
+              }
+            ],
+            "fallback_normalized": [
+              0.285,
+              0.314
+            ]
+          },
+          "following_list_marker": [
+            {
+              "type": "text",
+              "value": "SET_FOLLOWING_LIST_LABEL"
+            }
+          ],
+          "target_account": {
+            "selectors": [
+              {
+                "type": "description",
+                "value": "SET_TARGET_ACCOUNT"
+              },
+              {
+                "type": "text",
+                "value": "SET_TARGET_ACCOUNT"
+              }
+            ],
+            "fallback_normalized": [
+              0.25,
+              0.575
+            ]
+          },
+          "target_profile_marker": [
+            {
+              "type": "resource_id",
+              "value": "SET_TARGET_PROFILE_MARKER_RESOURCE_ID"
+            }
+          ],
+          "video_marker": [
+            {
+              "type": "resource_id",
+              "value": "com.ss.android.ugc.aweme:id/comment_layout"
+            },
+            {
+              "type": "description_contains",
+              "value": "评论"
+            }
+          ],
+          "swipe": {
+            "start": [
+              0.5,
+              0.76
+            ],
+            "end": [
+              0.5,
+              0.22
+            ],
+            "duration_seconds": 0.5
+          },
+          "between_swipes_seconds": 2,
+          "target_video": {
+            "node_resource_id": "com.ss.android.ugc.aweme:id/p04",
+            "ancestor_resource_id": "com.ss.android.ugc.aweme:id/container",
+            "fallback_normalized": [
+              0.165,
+              0.826
+            ],
+            "index": 0
+          }
+        }
+      }
+    },
+    "ks": {
+      "name": "ks",
+      "package": "com.smile.gifmaker",
+      "flows": {
+        "profile_video": {
+          "selector_timeout_seconds": 10,
+          "home_navigation_selectors": [
+            {
+              "type": "resource_id",
+              "value": "SET_UNIQUE_IN_APP_ENTRY_MARKER"
+            }
+          ],
+          "me_tab": {
+            "selectors": [
+              {
+                "type": "description",
+                "value": "我"
+              }
+            ],
+            "fallback_normalized": [
+              0.9,
+              0.947
+            ]
+          },
+          "own_profile_marker": [
+            {
+              "type": "resource_id",
+              "value": "com.smile.gifmaker:id/following_layout"
+            }
+          ],
+          "following_count": {
+            "selectors": [
+              {
+                "type": "resource_id",
+                "value": "com.smile.gifmaker:id/following_layout"
+              }
+            ],
+            "fallback_normalized": [
+              0.649,
+              0.218
+            ]
+          },
+          "following_list_marker": [
+            {
+              "type": "resource_id",
+              "value": "com.smile.gifmaker:id/editor"
+            }
+          ],
+          "target_account": {
+            "selectors": [
+              {
+                "type": "resource_id",
+                "value": "com.smile.gifmaker:id/name",
+                "text": "SET_TARGET_ACCOUNT"
+              }
+            ],
+            "fallback_normalized": [
+              0.38,
+              0.606
+            ]
+          },
+          "target_profile_marker": [
+            {
+              "type": "resource_id",
+              "value": "com.smile.gifmaker:id/user_name_tv",
+              "text": "SET_TARGET_ACCOUNT"
+            }
+          ],
+          "video_marker": [
+            {
+              "type": "resource_id",
+              "value": "com.smile.gifmaker:id/user_name_text_view",
+              "text": "SET_TARGET_VIDEO_AUTHOR_LABEL"
+            }
+          ],
+          "swipe": {
+            "start": [
+              0.5,
+              0.75
+            ],
+            "end": [
+              0.5,
+              0.208
+            ],
+            "duration_seconds": 0.5
+          },
+          "between_swipes_seconds": 5,
+          "initial_play_seconds": 4,
+          "target_video": {
+            "selectors": [
+              {
+                "type": "resource_id",
+                "value": "com.smile.gifmaker:id/player_cover_container",
+                "index": 0
+              }
+            ],
+            "fallback_normalized": [
+              0.166,
+              0.79
+            ]
+          }
+        }
+      }
+    },
+    "aqy": {
+      "name": "aqy",
+      "package": "com.qiyi.video",
+      "flows": {
+        "offline_playback": {
+          "state_timeout_seconds": 12,
+          "activities": {
+            "history_download": [
+              "org.qiyi.video.PhoneCloudRecordActivity"
+            ],
+            "player": [
+              "org.iqiyi.video.activity.PlayerActivity"
+            ]
+          },
+          "cold_start_settle_seconds": 2,
+          "startup_ad_probe_seconds": 2,
+          "after_startup_ad_seconds": 1,
+          "me_tab": [
+            0.8899,
+            0.9567
+          ],
+          "profile_marker": "SET_PROFILE_MARKER",
+          "download_marker": "我的下载",
+          "fixed_video_title": "SET_OFFLINE_VIDEO_TITLE",
+          "player_settle_seconds": 1,
+          "portrait_player_center": [
+            0.5,
+            0.1623
+          ],
+          "controls_settle_seconds": 0.3,
+          "portrait_fullscreen_button": [
+            0.9434,
+            0.2742
+          ],
+          "fullscreen_settle_seconds": 0.8,
+          "landscape_player_center": [
+            0.2294,
+            0.3538
+          ],
+          "start_seek_fraction": 0,
+          "start_position_seconds": 0,
+          "position_tolerance_seconds": 5,
+          "seekbar_resource_id": "com.qiyi.video:id/play_progress",
+          "after_seek_seconds": 0.8,
+          "position_resource_id": "com.qiyi.video:id/tv_position",
+          "controls_hide_seconds": 5
+        }
+      }
+    },
+    "tb": {
+      "name": "tb",
+      "package": "com.taobao.taobao",
+      "flows": {
+        "product_feed": {
+          "home_activities": [
+            "SET_HOME_ACTIVITY"
+          ],
+          "search_query": "SET_PRODUCT_SEARCH_QUERY"
+        }
+      }
+    },
+    "wb": {
+      "name": "wb",
+      "package": "com.sina.weibo",
+      "flows": {
+        "profile_feed": {
+          "activity_timeout_seconds": 10,
+          "activities": {
+            "home": [
+              ".MainTabActivity"
+            ],
+            "search_middle": [
+              ".search.middle.SearchMiddleActivity"
+            ],
+            "search_results": [
+              ".search.searchv3.SearchActivityV2"
+            ],
+            "profile": [
+              ".page.ProfileInfoActivity"
+            ]
+          },
+          "initial_settle_seconds": 2,
+          "between_navigation_seconds": 2,
+          "discover_tab": [
+            0.5,
+            0.948
+          ],
+          "search_box": [
+            0.354,
+            0.058
+          ],
+          "search_history": [
+            0.187,
+            0.281
+          ],
+          "target_profile": [
+            0.181,
+            0.253
+          ],
+          "swipe": {
+            "start": [
+              0.5,
+              0.75
+            ],
+            "end": [
+              0.5,
+              0.208
+            ],
+            "duration_seconds": 0.5
+          },
+          "between_swipes_seconds": 5,
+          "search_history_selectors": [
+            {
+              "type": "text",
+              "value": "SET_TARGET_ACCOUNT"
+            }
+          ],
+          "target_profile_selectors": [
+            {
+              "type": "text",
+              "value": "SET_TARGET_ACCOUNT"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
